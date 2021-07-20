@@ -31,17 +31,25 @@ body {
     top: 24px;
     right: -20px;
     background-color: #fff;
-    display: flex;
+    display: none;
     flex-direction: column;
-    opacity: 0;
-    transform: translateX(150px);
-    transition: opacity 1s ease, transform 1s ease;
 }
 
 .nav__list.responsive {
-    opacity: 1;
-    transform: translateX(0px);
-    transition: opacity 1s ease, transform 1s ease;   
+    display: flex;
+    animation: slidein 2s;
+}
+
+@keyframes slidein {
+    from {
+        transform: translateX(150px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
 }
 
 .nav__item {
@@ -365,6 +373,7 @@ body {
         align-items: center;
     }
     .nav__list {
+        display: flex;
         flex-direction: row;
         position: unset;
         opacity: 1;
