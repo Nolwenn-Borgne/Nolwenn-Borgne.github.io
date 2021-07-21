@@ -193,6 +193,19 @@ body {
     margin: 0.5rem;
 }
 
+.link {
+   text-decoration: none;
+   border-bottom: dashed 1px #067faf; 
+   color: #067faf;
+}
+
+.link:visited {
+    border-bottom: dashed 1px #012b2c; 
+    color: #012b2c;
+}
+
+
+
 .projects {
     display: flex;
     flex-wrap: wrap;
@@ -362,6 +375,11 @@ body {
     width: 100%;
 }
 
+.footer__text {
+    color: #fff;
+    text-align: center;
+    margin: 0.5rem 0;
+}
 
 
 /* MEDIA QUERIES */
